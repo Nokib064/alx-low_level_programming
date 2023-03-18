@@ -6,7 +6,7 @@
 /**
  * main - check if a random number is positive, zero or negative.
  *
- * return: 0 if successful, else 1 on error
+ * Return: 0 if successful, else 1 on error
  */
 
 int main(void)
