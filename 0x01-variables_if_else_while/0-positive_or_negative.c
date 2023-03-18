@@ -4,9 +4,9 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - main function
+ * main - check if a random number is positive, zero or negative.
  *
- * return: 0
+ * return: 0 if successful, else 1 on error
  */
 
 int main(void)
