@@ -11,8 +11,11 @@ int main(void)
 	for (a = 0 ; a < 10 ; a++)
 	{
 		printf("%d", a);
-		printf(",");
-		printf(" ");
+		if (a != 9)
+		{
+			printf(",");
+			printf(" ");
+		}
 	}
 	return (0);
 }
