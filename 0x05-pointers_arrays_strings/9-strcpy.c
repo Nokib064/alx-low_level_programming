@@ -3,7 +3,7 @@
 /**
  * *_strcpy - copy from pointer
  * @dest: array
- * @:src: another array
+ * @src: another array
  * Return: dest
  */
 char *_strcpy(char *dest, char *src)
