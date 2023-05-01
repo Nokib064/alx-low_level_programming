@@ -11,7 +11,7 @@ int pop_listint(listint_t **head)
 	listint_t *ptr;
 	int ptr_2;
 
-	while (head != NULL || *head != NULL)
+	while (!head || !*head)
 		return (0);
 
 	ptr_2 = (*head)->n;
