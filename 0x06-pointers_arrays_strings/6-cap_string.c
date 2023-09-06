@@ -3,23 +3,32 @@
 /**
  * cap_string - function that capitalize all string letters
  * @n: string
- * Return: whatever
+ * Return:0
  */
-
-char *cap_string(char *n)
+char *cap_string(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (n[i])
+	if(str[0] >= 'a' && str[0] <= 'z')
 	{
-		while (!(n[i] >= 'a' && n[i] <= 'z'))
-				i++;
-			if (n[i - 1] == ' ' || n[i - 1] == '\t' || n[i - 1] == '\n' || n[i - 1] == ',' || n[i - 1] == ';' || n[i - 1] == '.' || n[i - 1] == '!' || n[i - 1] == '?' || n[i - 1] == '"' || n[i - 1] == '(' || n[i - 1] == ')' || n[i - 1] == '{' || n[i - 1] == '}' || i == 0)
-				n[i] -= 32;
-
-		i++;
+		str[0] -= 32;
 	}
-	return (n);
+
+	for(i = 1; str[i] != '\0'; i++)
+	{
+		if (str[i] == ',' || str[i] == '\n' || str[i] == '\t' || str[i] == ' ' || str[i] == ';' || str[i] =='.' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] =='(' || str[i] == ')' || str[i] == '{' || str[i] =='}')
+		{
+			if (str[i + 1] >= 'a' && str[i + 1] <='z')
+			{
+				str[i +1] -= 32;
+			}
+
+		}
+	}
+	return str;
+}
+
+
 }
 
 
