@@ -2,7 +2,7 @@
 
 /**
  * cap_string - function that capitalize all string letters
- * @n: string
+ * @str: string
  * Return:0
  */
 char *cap_string(char *str)
@@ -13,7 +13,6 @@ char *cap_string(char *str)
 	{
 		str[0] -= 32;
 	}
-
 	for (i = 1; str[i] != '\0'; i++)
 	{
 		if (str[i] == ',' || str[i] == '\n' || str[i] == '\t' ||
